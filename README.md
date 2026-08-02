@@ -1,13 +1,13 @@
 #🚖 Uber End-to-End Data Engineering Project
 A comprehensive end-to-end data engineering pipeline built to process, model, and visualize New York City TLC yellow taxi trip data using modern cloud infrastructure, orchestration tools, and data warehousing.
 
-#🏗️ Architecture Diagram
+##🏗️ Architecture Diagram
 The following diagram illustrates the high-level flow of the pipeline—from ingesting the raw dataset into Mage AI for orchestration, loading it into Google BigQuery as a data warehouse, and finally connecting it to Data Studio for visualization:
 
 <img width="960" height="540" alt="architecture" src="https://github.com/user-attachments/assets/997bea12-4be5-4ce5-952d-a47815cf06af" />
 
 
-#📊 Table Distribution & Data Modeling (Star Schema)
+##📊 Table Distribution & Data Modeling (Star Schema)
 To optimize query performance and analytical efficiency, the raw dataset was restructured using a dimensional modeling approach (star schema). The table distribution schema below outlines how the fact and dimension tables relate to each other:
 
 <img width="1760" height="1206" alt="data_model" src="https://github.com/user-attachments/assets/4b4be337-bd11-4db1-8bae-5bd1c5d790c6" />
@@ -17,7 +17,7 @@ Fact Table (tbl_analytics): Stores core transactional metrics like trip distance
 
 Dimension Tables: Store descriptive attributes such as pickup/dropoff datetimes, passenger counts, payment types, and geographic coordinate lookups.
 
-#🛠️ Tech Stack & Tools
+##🛠️ Tech Stack & Tools
 Programming Language: Python (Pandas)
 
 Orchestration / ETL: Mage AI
@@ -28,7 +28,7 @@ Data Warehouse: Google BigQuery
 
 Visualization: Data Studio (Looker Studio)
 
-#📸 Project Screenshots
+##📸 Project Screenshots
 1. Mage AI Pipeline Interface
 The orchestrator handling the data ingestion, transformation blocks, and exports:
 
